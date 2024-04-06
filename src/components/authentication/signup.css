@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    border: 1px solid red;
 }
 
 .authentication_page .authentication_form {
@@ -70,11 +69,11 @@
 }
 
 .authentication_form input {
+    width: 80%;
     border: none;
     padding: 15px;
     background-color: rgba(238, 238, 238, 1);
     margin-bottom: 15px;
-    width: 300px;
 }
 
 
@@ -98,4 +97,45 @@
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+    .authentication_page .authentication_form {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .authentication_page .authentication_form {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px) {
+    .authentication_page .authentication_form {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .authentication_page .authentication_form {
+        border: 2px solid red;
+        width: 70%;
+    }
+    
+    .authentication_form .auth_content {
+        display: none;
+    }
+
+    .authentication_form .auth_content_text {
+        display: none;
+    }
+
+    .authentication_form .signup {
+        transform: translateX(0);
+    }
+
+    .authentication_form .signin{
+        width: 100%;
+    }
 }

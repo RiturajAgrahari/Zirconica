@@ -26,6 +26,7 @@ const SignUp = () => {
                     <input className="auth_form_input" type="password" placeholder="Password"></input>
                     <a>Forgot your password?</a>
                     <button className="auth_button">Sign in</button>
+                    <p>Don't have an account?<a href="#"> Sign up</a></p>
                 </div>
                 <div className="signup" style={{opacity: !switchSide ? 1 : 0, visibility: !switchSide ? "visible" : "hidden", transform: !switchSide ? "translateX(100%)" : "translateX(75%)"}}>
                     <h2>Create Account</h2>
