@@ -36,6 +36,10 @@
     flex-direction: column;
 }
 
+.authentication_form div .auth_mobile{
+    display: none;
+}
+
 .authentication_form .signin {
     position: absolute;
     left: 0;
@@ -119,7 +123,6 @@
 
 @media (max-width: 600px) {
     .authentication_page .authentication_form {
-        border: 2px solid red;
         width: 70%;
     }
     
@@ -132,10 +135,15 @@
     }
 
     .authentication_form .signup {
-        transform: translateX(0);
+        width: 100%;
+        transform: translateX(0) !important;
     }
 
     .authentication_form .signin{
         width: 100%;
+    }
+
+    .authentication_form div .auth_mobile{
+        display: flex;
     }
 }

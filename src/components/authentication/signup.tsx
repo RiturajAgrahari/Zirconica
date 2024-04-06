@@ -8,13 +8,7 @@ const SignUp = () => {
 
     const switch_side = () => {
         console.log("switching side")
-
         setSwitchSide(!switchSide)
-
-        
-
-
-
     }
 
     return (
@@ -26,7 +20,7 @@ const SignUp = () => {
                     <input className="auth_form_input" type="password" placeholder="Password"></input>
                     <a>Forgot your password?</a>
                     <button className="auth_button">Sign in</button>
-                    <p>Don't have an account?<a href="#"> Sign up</a></p>
+                    <p className="auth_mobile">Don't have an account?<a href="#" onClick={switch_side}>Sign up</a></p>
                 </div>
                 <div className="signup" style={{opacity: !switchSide ? 1 : 0, visibility: !switchSide ? "visible" : "hidden", transform: !switchSide ? "translateX(100%)" : "translateX(75%)"}}>
                     <h2>Create Account</h2>
@@ -35,6 +29,7 @@ const SignUp = () => {
                     <input className="auth_form_input" type="password" placeholder="Password"></input>
                     <input className="auth_form_input" type="password" placeholder="Confirm Password"></input>
                     <button className="auth_button">Sign up</button>
+                    <p className="auth_mobile">Already have an account?<a href="#" onClick={switch_side}>Sign in</a></p>
                 </div>
                 <div className="auth_content" style={{left: switchSide ? "50%" : 0, borderRadius: switchSide ? "0 20px 20px 0": "20px 0 0 20px"}}>
                 </div>
