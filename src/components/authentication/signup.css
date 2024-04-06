@@ -122,6 +122,10 @@
 }
 
 @media (max-width: 600px) {
+    .authentication_page {
+        overflow: hidden;
+    }
+
     .authentication_page .authentication_form {
         width: 90%;
     }
