@@ -123,7 +123,7 @@
 
 @media (max-width: 600px) {
     .authentication_page .authentication_form {
-        width: 70%;
+        width: 90%;
     }
     
     .authentication_form .auth_content {
